@@ -1,0 +1,203 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border:none;
+	text-decoration: none;
+	color:#efefef;
+	font-size:12px;
+	font-family:"Helvetica Neue";
+	font-weight:normal;
+	letter-spacing: 2px;
+}
+
+a:link {
+	color: #efefef;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #efefef;
+	text-decoration: none;
+}
+
+a:active {
+	color: #efefef;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover img {
+	-moz-opacity:0.5;
+	opacity:0.5;
+	filter: alpha(opacity=50);
+}
+
+b {
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ol {
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+body{
+	background-color: black;
+	height:100%;
+	width:100%;
+	/*min-width:750px;
+	min-height:400px;*/
+}
+
+div.mainmenu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width:800px;
+	height:444px;
+	margin-top: -222px;
+	margin-left: -400px;
+	z-index:999;
+}
+
+div.mainmenu div, div.mainmenu h2, div.mainmenu h3, div.mainmenu h4{
+	width:400px;
+	height:148px;
+}
+
+div p.label{
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 5px;
+	-moz-opacity:0.5;
+	opacity:0.5;
+	filter: alpha(opacity=50);
+}
+
+div.mainmenu h2#event{
+	position: absolute;
+}
+
+div.mainmenu h3#menu{
+	position: absolute;
+	right:0px;
+}
+
+div.mainmenu h4#info{
+	position: absolute;
+	top:148px;
+}
+
+div.mainmenu div#logo{
+	position: absolute;
+	height:222px;
+	top:148px;
+	right:0px;
+}
+
+div.mainmenu div#logo img{
+	position: absolute;
+	width: 258px;
+	height:155px;
+	top:50%;
+	left:50%;
+	margin-top:-77px;
+	margin-left:-129px;
+}
+
+/* -- contents -- */
+div#backlogo{
+	position: absolute;
+	width: 258px;
+	height:155px;
+	top:50%;
+	left:50%;
+	margin-top:-77px;
+	margin-left:-129px;
+	z-index:998;
+	-moz-opacity:0.1;
+	opacity:0.1;
+	filter: alpha(opacity=10);
+}
+
+div.main{
+	position: absolute;
+	width: 600px;
+	top:150px;
+	left:50%;
+	margin-left:-300px;
+	padding-bottom:120px;
+	z-index:1001;
+}
+
+div.main h2{
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+div.main h3{
+	font-size: 15px;
+	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.main li{
+	margin-left: 20px;
+}
+
+/*div.menu a:hover p {
+	-moz-opacity:1;
+	opacity:1;
+	filter: alpha(opacity=100);
+}*/
+
+div#header{
+	position: absolute;
+	width:1000px;
+	top:50px;
+	left:50%;
+	margin-left:-500px;
+	z-index:999;
+}
+
+div#header div{
+	float:left;
+	width:200px;
+}
+
+div#header div img.icon{
+	width:200px;
+}
+
+
+div#footer{
+	background-color:black;/* àÍî‘è„Ç…èdÇ»Ç¡ÇƒÅAâ∫ÇìßÇØÇ≥ÇπÇ»Ç¢ÇΩÇﬂ */
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	padding:10px;
+	z-index:1000;
+}
+
+div#footer a:LINK, div#footer a:VISITED, div#footer a:ACTIVE, div#footer a:HOVER {
+	text-decoration: underline;
+}
+
+div#footer div#requirement{
+	font-size: 10px;
+}

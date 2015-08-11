@@ -1,0 +1,23 @@
+
+div#header div#event{
+	float:left;
+	width:400px;
+}
+
+div#header div#event p{
+	font-size: 20px;
+	font-weight: bolder;
+	-moz-opacity:0;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+div#header div#event a:HOVER img{
+	-moz-opacity:1;
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
+div#header div#event img.icon{
+	width:400px;
+}
