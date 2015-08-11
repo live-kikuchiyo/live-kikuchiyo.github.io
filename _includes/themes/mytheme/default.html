@@ -13,21 +13,21 @@
 		<meta name="robots" content="INDEX,FOLLOW" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="./css/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/main.css" />
 		{{ page.css }}
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript">
 			google.load("jquery", "1.3.2");
 		</script>
-		<script type="text/javascript" src="./js/main.js"></script>
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/main.js"></script>
 	</head>
 	<body bgcolor="#000000">
 		<h1><a href="./"><b>お酒と唄を楽しむお店 菊千代 LIVE BAR KiKUCHIYO</b></a></h1>
 
 		<div id="header" class="menu">
-			<div id="event"><a href="./event.html"><p class="label">ライブ・イベント情報</p><img class="icon" src="./img/icon_event.jpg" /></a></div>
-			<div id="menu"><a href="./menu.html"><p class="label">フード・ドリンクメニュー</p><img class="icon" src="./img/icon_menu.jpg" /></a></div>
-			<div id="info"><a href="./info.html"><p class="label">菊千代ってどんなお店？？</p><img class="icon" src="./img/icon_info.jpg" /></a></div>
+			<div id="event"><a href="/event.html"><p class="label">ライブ・イベント情報</p><img class="icon" src="{{ ASSET_PATH }}/img/icon_event.jpg" /></a></div>
+			<div id="menu"><a href="/menu.html"><p class="label">フード・ドリンクメニュー</p><img class="icon" src="{{ ASSET_PATH }}/img/icon_menu.jpg" /></a></div>
+			<div id="info"><a href="/info.html"><p class="label">菊千代ってどんなお店？？</p><img class="icon" src="{{ ASSET_PATH }}/img/icon_info.jpg" /></a></div>
 		</div>
 
 		{{ content }}
