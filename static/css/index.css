@@ -1,5 +1,5 @@
 div.miniinfo {
-	background-image : url("/img/miniinfolabel.png");
+	background-image : url("/static/image/miniinfolabel.png");
 	position: fixed;
 	bottom: 0;
 	left: 0;
