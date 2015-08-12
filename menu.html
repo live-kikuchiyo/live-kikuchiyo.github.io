@@ -5,6 +5,32 @@ title: メニュー
 {% include JB/setup %}
 
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/menu.css" />
-		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js"></script>
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js">
+		$(function (){
+			var targetDrink = $("#drink_markdown");
+			if (typeof targetDrink !== "undefined"){
+				$.ajax({url: targetDrink[0].attributes["src"].value,
+				}).success(function(data){
+					targetDrink.append(marked(data)).ready(function(){
+					});
+				}).error(function(data){
+					targetDrink.append("This content failed to load.");
+				});
+			}
+			var targetFood = $("#menu_markdown");
+			if (typeof targetFood !== "undefined"){
+				$.ajax({url: targetFood[0].attributes["src"].value,
+				}).success(function(data){
+					targetFood.append(marked(data)).ready(function(){
+					});
+				}).error(function(data){
+					targetFood.append("This content failed to load.");
+				});
+			}
+		});
+		</script>
 		<div id="backlogo"><img src="{{ ASSET_PATH }}/image/logo_b.jpg" /></div>
-		<div class="main" id="markdown_content" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/menu.md"> </div>
+		<div class="main">
+			<div id="drink_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/drink.md"> </div>
+			<div class="food" id="food_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/food.md"> </div>
+		</div>
