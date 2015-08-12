@@ -20,11 +20,10 @@ title: イベント
 								if (-1 < text.indexOf("==========")){
 									if (false === start){
 										start = true;
-										$(this).html("<b style='color: red;'>" + text);
 									}
 									else {
 										start = false;
-										$(this).html(text + "</b>");
+										$(this).parent().html("<b style='color: red;'>" + $(this).parent().html() + "</b>");
 									}
 								}
 							});
