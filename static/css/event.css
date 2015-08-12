@@ -21,3 +21,13 @@ div#header div#event a:HOVER img{
 div#header div#event img.icon{
 	width:400px;
 }
+
+span.redblock {
+	color: red;
+	font-weight: bold;
+}
+
+span.redblock p {
+	color: red;
+	font-weight: bold;
+}
