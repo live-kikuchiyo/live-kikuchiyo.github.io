@@ -8,11 +8,11 @@ title: イベント
 		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js"></script>
 		<script type="text/javascript">
 			$(function (){
-				var targetDrink = $("#drink_markdown");
-				if (typeof targetDrink !== "undefined"){
-					$.ajax({url: targetDrink[0].attributes["src"].value,
+				var targetEvent = $("#event_markdown");
+				if (typeof targetEvent !== "undefined"){
+					$.ajax({url: targetEvent[0].attributes["src"].value,
 					}).success(function(data){
-						targetDrink.append(marked(data)).ready(function(){
+						targetEvent.append(marked(data)).ready(function(){
 							// =========があったら赤文字で囲む
 							var start = false;
 							 $("div#markdown_content p").each(function(){
@@ -30,10 +30,10 @@ title: イベント
 
 						});
 					}).error(function(data){
-						targetDrink.append("This content failed to load.");
+						targetEvent.append("This content failed to load.");
 					});
 				}
 			});
 		</script>
 		<div id="backlogo"><img src="{{ ASSET_PATH }}/img/logo_b.jpg" /></div>
-		<div class="main" id="drink_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/event.md"></div>
+		<div class="main" id="event_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/event.md"></div>
