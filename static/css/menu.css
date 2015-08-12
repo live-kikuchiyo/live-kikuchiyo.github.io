@@ -39,5 +39,6 @@ div.main div.drink{
 }
 
 div.main div.food{
+	padding-left: 300px;
 	width: 300px;
 }
