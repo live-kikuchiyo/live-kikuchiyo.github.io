@@ -3,8 +3,8 @@ $(function (){
 	var target = $("#markdown_content");
 	if (typeof target !== "undefined"){
 		$.ajax({url: target[0].attributes["src"].value,
-			}).success(function(data){
-				target.append(marked(data)).ready(function(){
+		}).success(function(data){
+			target.append(marked(data)).ready(function(){
 //				$("div#markdown_content h1#unicorn").remove();
 //				$("div#markdown_content p").each(function(){
 //					var text = $(this).text();
@@ -35,10 +35,9 @@ $(function (){
 //						$(this).text(text);
 //					}
 //					});
-				});
-			}).error(function(data){
-				target.append("This content failed to load.");
 			});
+		}).error(function(data){
+			target.append("This content failed to load.");
 		});
 	}
 });
