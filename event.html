@@ -5,68 +5,35 @@ title: イベント
 {% include JB/setup %}
 
 		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/event.css" />
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js"></script>
+		<script type="text/javascript">
+			$(function (){
+				var targetDrink = $("#drink_markdown");
+				if (typeof targetDrink !== "undefined"){
+					$.ajax({url: targetDrink[0].attributes["src"].value,
+					}).success(function(data){
+						targetDrink.append(marked(data)).ready(function(){
+							// =========があったら赤文字で囲む
+							var start = false;
+							 $("div#markdown_content p").each(function(){
+								var text = $(this).text();
+								if (text === "=========="){
+									if (false === start){
+										start = true;
+										$(this).html("<b style='color: red;'>" + text);
+									}
+									else {
+										start = false;
+										$(this).html(text + "</b>");
+									}
+								}
+
+						});
+					}).error(function(data){
+						targetDrink.append("This content failed to load.");
+					});
+				}
+			});
+		</script>
 		<div id="backlogo"><img src="{{ ASSET_PATH }}/img/logo_b.jpg" /></div>
-		<div class="main">
-			<h2>2015年 6月のイベント情報</h2>
-			<div>
-				<b style="color: red;">
-				=========
-				<br/>
-				6月7日(日)
-				<br/>
-				菊千代釣り大会 vol.5 
-				<br/>
-				<br/>
-				※終日貸し切りとさせていただきます。
-				<br/>
-				=========
-				</b>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-			</div>
-			<h2>2015年 5月のイベント情報</h2>
-			<div>
-				<b style="color: red;">
-				=========
-				<br/>
-				5月24日(日)
-				<br/>
-				終日貸し切りです。
-				<br/>
-				<br/>
-				※通常営業は致しませんので予めご了承ください。
-				<br/>
-				=========
-				</b>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<b style="color: red;">
-				5月12日(火)〜14日(木)
-				<br/>
-				臨時休業させて頂きます
-				</b>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				5月3日 日曜日
-				<br/>
-				Private Stock Live
-				<br/>
-				<br/>
-				オープン 18:00
-				<br/>
-				スタート 19:00
-				<br/>
-				<br/>
-				テーブルチャージ¥500+投げ銭
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-			</div>
-		</div>
+		<div class="main" id="drink_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/event.md"></div>
