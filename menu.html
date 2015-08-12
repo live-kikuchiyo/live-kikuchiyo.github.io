@@ -18,7 +18,7 @@ title: メニュー
 						targetDrink.append("This content failed to load.");
 					});
 				}
-				var targetFood = $("#menu_markdown");
+				var targetFood = $("#food_markdown");
 				if (typeof targetFood !== "undefined"){
 					$.ajax({url: targetFood[0].attributes["src"].value,
 					}).success(function(data){
