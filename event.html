@@ -15,7 +15,7 @@ title: イベント
 						targetEvent.append(marked(data)).ready(function(){
 							// =========があったら赤文字で囲む
 							var start = false;
-							 $("div#markdown_content p").each(function(){
+							$("div#markdown_content p").each(function(){
 								var text = $(this).text();
 								if (text === "=========="){
 									if (false === start){
@@ -27,7 +27,7 @@ title: イベント
 										$(this).html(text + "</b>");
 									}
 								}
-
+							});
 						});
 					}).error(function(data){
 						targetEvent.append("This content failed to load.");
