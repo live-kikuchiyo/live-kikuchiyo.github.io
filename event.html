@@ -17,7 +17,7 @@ title: イベント
 							var start = false;
 							$("div#event_markdown p").each(function(){
 								var text = $(this).text();
-								if (text === "=========="){
+								if (-1 < text.indexOf("==========")){
 									if (false === start){
 										start = true;
 										$(this).html("<b style='color: red;'>" + text);
