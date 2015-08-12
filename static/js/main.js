@@ -34,7 +34,7 @@ $(function (){
 //					else {
 //						$(this).text(text);
 //					}
-					});
+//					});
 				});
 			}).error(function(data){
 				target.append("This content failed to load.");
