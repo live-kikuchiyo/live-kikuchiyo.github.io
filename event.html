@@ -15,7 +15,7 @@ title: イベント
 						targetEvent.append(marked(data)).ready(function(){
 							// =========があったら赤文字で囲む
 							var start = false;
-							$("div#markdown_content p").each(function(){
+							$("div#event_markdown p").each(function(){
 								var text = $(this).text();
 								if (text === "=========="){
 									if (false === start){
@@ -35,5 +35,5 @@ title: イベント
 				}
 			});
 		</script>
-		<div id="backlogo"><img src="{{ ASSET_PATH }}/img/logo_b.jpg" /></div>
+		<div id="backlogo"><img src="{{ ASSET_PATH }}/image/logo_b.jpg" /></div>
 		<div class="main" id="event_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/event.md"></div>
