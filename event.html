@@ -8,6 +8,7 @@ title: イベント
 		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js"></script>
 		<script type="text/javascript">
 			$(function (){
+				alert('is???');
 				var targetEvent = $("#event_markdown");
 				if (typeof targetEvent !== "undefined"){
 					$.ajax({url: targetEvent[0].attributes["src"].value,
