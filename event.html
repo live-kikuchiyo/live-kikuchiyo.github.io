@@ -8,7 +8,6 @@ title: イベント
 		<script type="text/javascript" src="{{ ASSET_PATH }}/js/marked.js"></script>
 		<script type="text/javascript">
 			$(function (){
-				alert('is???');
 				var targetEvent = $("#event_markdown");
 				if (typeof targetEvent !== "undefined"){
 					$.ajax({url: targetEvent[0].attributes["src"].value,
@@ -36,6 +35,4 @@ title: イベント
 			});
 		</script>
 		<div id="backlogo"><img src="{{ ASSET_PATH }}/image/logo_b.jpg" /></div>
-		<div class="main">
-			<div id="event_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/events.md"></div>
-		</div>
+		<div class="main" id="event_markdown" src="https://raw.githubusercontent.com/live-kikuchiyo/live-kikuchiyo.github.io/master/events.md"></div>
