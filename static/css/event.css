@@ -1,8 +1,25 @@
 
+
 div#header div#event{
-	float:left;
+	position: absolute;
+	left:0px;
 	width:400px;
 }
+
+div#header div#info{
+	position: absolute;
+	left:400px;
+}
+
+div#header div#menu{
+	position: absolute;
+	left:600px;
+}
+
+/*div#header div#event{
+	float:left;
+	width:400px;
+}*/
 
 div#header div#event p{
 	font-size: 20px;
