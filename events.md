@@ -4,7 +4,8 @@
 >> 
 >> <br/>
 >> 
->> //Oh!Sharels ライブ                
+>> Oh!Sharels ライブ 
+>>               
 >> - 18:00 open / 19:00 start
 >> - ¥2500 + 1drink
 >
