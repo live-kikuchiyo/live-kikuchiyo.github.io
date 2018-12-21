@@ -113,9 +113,9 @@
 >>
 >> <br/>
 >>
->> - Oh!Sharels ライブ
+>> - <strong>Oh!Sharels ライブ</strong>
 >>
->> - ※詳細は後日UP致します
+>> - <strong>※詳細は後日UP致します</strong>
 >> 
 >> <br/>
 >>
